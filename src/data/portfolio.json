@@ -60,7 +60,18 @@
                 "React",
                 "TypeScript",
                 "Tailwind"
-            ]
+            ],
+            "github_links": [
+                {
+                    "label": "Frontend Repo",
+                    "url": "https://github.com/unixdc/pm-frontend-placeholder"
+                },
+                {
+                    "label": "Backend Repo",
+                    "url": "https://github.com/unixdc/pm-backend-placeholder"
+                }
+            ],
+            "demo_link": "https://pm-prototype-demo.placeholder.com"
         },
         {
             "id": "tetris",
@@ -71,6 +82,12 @@
                 "Vanilla JavaScript",
                 "HTML5 Canvas",
                 "CSS3"
+            ],
+            "github_links": [
+                {
+                    "label": "Source Code",
+                    "url": "https://github.com/unixdc/tetris-clone-placeholder"
+                }
             ]
         },
         {

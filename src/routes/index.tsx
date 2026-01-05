@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import data from '../data/portfolio.json'
+import { Github, Globe } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
   component: Portfolio,
@@ -100,9 +101,26 @@ function Portfolio() {
                         <p className="font-serif-text text-sm leading-relaxed mb-3 text-neutral-600 line-clamp-3">
                           {project.description}
                         </p>
-                        <p className="text-xs font-bold uppercase tracking-wide text-neutral-400">
+                        <p className="text-xs font-bold uppercase tracking-wide text-neutral-400 mb-3">
                           {project.tech.join(" / ")}
                         </p>
+
+                        {/* Links Section */}
+                        {(project.github_links || project.demo_link) && (
+                          <div className="flex flex-wrap gap-3 mt-2">
+                            {project.github_links?.map((link, idx) => (
+                              <a key={idx} href={link.url} target="_blank" rel="noreferrer" className="text-[10px] font-bold uppercase border border-black px-2 py-1 hover:bg-black hover:text-white transition-colors flex items-center gap-1">
+                                <Github className="w-3 h-3" /> {link.label}
+                              </a>
+                            ))}
+                            {project.demo_link && (
+                              <a href={project.demo_link} target="_blank" rel="noreferrer" className="text-[10px] font-bold uppercase border border-black px-2 py-1 bg-neutral-100 hover:bg-black hover:text-white transition-colors flex items-center gap-1">
+                                <Globe className="w-3 h-3" /> Live Demo
+                              </a>
+                            )}
+                          </div>
+                        )}
+
                       </div>
                       <div className="md:w-1/4">
                         <div className="aspect-square bg-neutral-100 border border-neutral-200 flex items-center justify-center">
