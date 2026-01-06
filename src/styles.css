@@ -5,7 +5,7 @@
   --font-serif-display: 'Playfair Display', serif;
   --font-serif-text: 'Merriweather', serif;
   --font-sans: 'Inter', sans-serif;
-  
+
   --color-paper: #fcfcfc;
   --color-ink: #1a1a1a;
   --color-ink-light: #4a4a4a;
@@ -19,7 +19,12 @@
     line-height: 1.6;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif-display font-bold leading-tight;
   }
 }
@@ -29,7 +34,7 @@
   .masthead-title {
     @apply font-serif-display text-5xl md:text-7xl font-black tracking-tight text-center uppercase border-b-4 border-black pb-4 mb-2;
   }
-  
+
   .section-title {
     @apply font-serif-display text-2xl font-bold border-b border-black mb-4 pb-1 uppercase tracking-wide;
   }
@@ -41,7 +46,7 @@
   .drop-cap::first-letter {
     @apply float-left text-5xl font-serif-display font-bold leading-[0.8] pr-2 mt-2;
   }
-  
+
   .vertical-rule {
     @apply border-r border-rule hidden md:block;
   }

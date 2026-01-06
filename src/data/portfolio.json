@@ -1,119 +1,93 @@
 {
-    "masthead": {
-        "name": "Dan Louis M. Dela Cruz",
-        "title": "Junior Web Developer / Software Engineer",
-        "issue_date": "Vol. 1, No. 1 — 2025",
-        "location": "Pampanga, PH",
-        "descriptors": [
-            "Full-Stack",
-            "Web Development",
-            "Software Engineering"
-        ]
-    },
-    "lead_story": {
-        "headline": "Full-Stack Developer Focused on Performance and User Experience",
-        "intro": [
-            "Motivated and results-oriented Junior Web Developer and Software Engineer with a strong foundation in full-stack web development. Experienced as a solo developer building and maintaining responsive web applications using PHP, Laravel, and React.js.",
-            "Proven ability to deliver modern, user-centric solutions while managing IT infrastructure and providing technical support. Eager to leverage technical skills in a challenging development role."
-        ],
-        "pull_quote": "Bridging the gap between complex logic and seamless user experience through clean, efficient code."
-    },
-    "skills": {
-        "Languages & Frameworks": [
-            "PHP & Laravel",
-            "JavaScript (ES6+)",
-            "React.js & TypeScript",
-            "HTML5 & CSS3"
-        ],
-        "Styling & UI": [
-            "Tailwind CSS",
-            "Bootstrap",
-            "Responsive Design"
-        ],
-        "Tools & Systems": [
-            "Git & GitHub",
-            "MySQL & PostgreSQL",
-            "Figma & Adobe Suite",
-            "RESTful APIs"
-        ],
-        "Infrastructure": [
-            "Linux (Ubuntu CLI)",
-            "VMware ESXi",
-            "SSH & Networking"
-        ]
-    },
-    "projects": [
-        {
-            "id": "crm",
-            "title": "Customer Relationship Manager",
-            "category": "Enterprise Software",
-            "description": "Comprehensive CRM system developed to streamline client data management, interaction tracking, and service history for better customer retention.",
-            "tech": [
-                "PHP",
-                "Laravel",
-                "Tailwind CSS"
-            ]
-        },
-        {
-            "id": "osp",
-            "title": "Outside Plant Management System",
-            "category": "GIS & Infrastructure",
-            "description": "A GIS-based solution mapping and managing fiber optic infrastructure. Enabled detailed visualization and efficient network planning for ISP field operations.",
-            "tech": [
-                "Laravel",
-                "React",
-                "Leaflet.js",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "pm-system",
-            "title": "Project Management Prototype",
-            "category": "Productivity Tool",
-            "img": "/pms_2.jpeg",
-            "description": "A decoupled project management system with a focus on scalability. Features separate codebases for the frontend and backend to separate concerns and improve maintainability.",
-            "tech": [
-                "Laravel API",
-                "React",
-                "TypeScript",
-                "Tailwind"
-            ],
-            "github_links": [
-                {
-                    "label": "Frontend Repo",
-                    "url": "https://github.com/dcLouisDan/project-management-system-fe.git"
-                },
-                {
-                    "label": "Backend Repo",
-                    "url": "https://github.com/dcLouisDan/project-management-system-api.git"
-                }
-            ],
-            "demo_link": "https://pms.danlouis.dev"
-        },
-        {
-            "id": "tetris",
-            "title": "Classic Tetris Clone",
-            "category": "Game Development",
-            "img": "/tetris_1.jpeg",
-            "description": "A faithful recreation of the classic puzzle game. Implements complex game logic, collision detection, and score tracking without external game engines.",
-            "tech": [
-                "Vanilla JavaScript",
-                "HTML5 Canvas",
-                "CSS3"
-            ],
-            "github_links": [
-                {
-                    "label": "Source Code",
-                    "url": "https://github.com/dcLouisDan/tetris-by-me.git"
-                }
-            ],
-            "demo_link": "/tetris"
-        }
+  "masthead": {
+    "name": "Dan Louis M. Dela Cruz",
+    "title": "Junior Web Developer / Software Engineer",
+    "issue_date": "Vol. 1, No. 1 — 2025",
+    "location": "Pampanga, PH",
+    "descriptors": ["Full-Stack", "Web Development", "Software Engineering"]
+  },
+  "lead_story": {
+    "headline": "Full-Stack Developer Focused on Performance and User Experience",
+    "intro": [
+      "Motivated and results-oriented Junior Web Developer and Software Engineer with a strong foundation in full-stack web development. Experienced as a solo developer building and maintaining responsive web applications using PHP, Laravel, and React.js.",
+      "Proven ability to deliver modern, user-centric solutions while managing IT infrastructure and providing technical support. Eager to leverage technical skills in a challenging development role."
     ],
-    "contact": {
-        "email": "louisdc002@gmail.com",
-        "github": "github.com/dcLouisDan",
-        "linkedin": "linkedin.com/in/dan-louis-dc",
-        "availability_status": "Available for Work"
+    "pull_quote": "Bridging the gap between complex logic and seamless user experience through clean, efficient code."
+  },
+  "skills": {
+    "Languages & Frameworks": [
+      "PHP & Laravel",
+      "JavaScript (ES6+)",
+      "React.js & TypeScript",
+      "HTML5 & CSS3"
+    ],
+    "Styling & UI": ["Tailwind CSS", "Bootstrap", "Responsive Design"],
+    "Tools & Systems": [
+      "Git & GitHub",
+      "MySQL & PostgreSQL",
+      "Figma & Adobe Suite",
+      "RESTful APIs"
+    ],
+    "Infrastructure": ["Linux (Ubuntu CLI)", "VMware ESXi", "SSH & Networking"]
+  },
+  "projects": [
+    {
+      "id": "crm",
+      "title": "Customer Relationship Manager",
+      "category": "Enterprise Software",
+      "description": "Comprehensive CRM system developed to streamline client data management, interaction tracking, and service history for better customer retention.",
+      "tech": ["PHP", "Laravel", "Tailwind CSS"],
+      "github_links": [],
+      "demo_link": null
+    },
+    {
+      "id": "osp",
+      "title": "Outside Plant Management System",
+      "category": "GIS & Infrastructure",
+      "description": "A GIS-based solution mapping and managing fiber optic infrastructure. Enabled detailed visualization and efficient network planning for ISP field operations.",
+      "tech": ["Laravel", "React", "Leaflet.js", "MySQL"],
+      "github_links": [],
+      "demo_link": null
+    },
+    {
+      "id": "pm-system",
+      "title": "Project Management Prototype",
+      "category": "Productivity Tool",
+      "img": "/pms_2.jpeg",
+      "description": "A decoupled project management system with a focus on scalability. Features separate codebases for the frontend and backend to separate concerns and improve maintainability.",
+      "tech": ["Laravel API", "React", "TypeScript", "Tailwind"],
+      "github_links": [
+        {
+          "label": "Frontend Repo",
+          "url": "https://github.com/dcLouisDan/project-management-system-fe.git"
+        },
+        {
+          "label": "Backend Repo",
+          "url": "https://github.com/dcLouisDan/project-management-system-api.git"
+        }
+      ],
+      "demo_link": "https://pms.danlouis.dev"
+    },
+    {
+      "id": "tetris",
+      "title": "Classic Tetris Clone",
+      "category": "Game Development",
+      "img": "/tetris_1.jpeg",
+      "description": "A faithful recreation of the classic puzzle game. Implements complex game logic, collision detection, and score tracking without external game engines.",
+      "tech": ["Vanilla JavaScript", "HTML5 Canvas", "CSS3"],
+      "github_links": [
+        {
+          "label": "Source Code",
+          "url": "https://github.com/dcLouisDan/tetris-by-me.git"
+        }
+      ],
+      "demo_link": "/tetris"
     }
+  ],
+  "contact": {
+    "email": "louisdc002@gmail.com",
+    "github": "github.com/dcLouisDan",
+    "linkedin": "linkedin.com/in/dan-louis-dc",
+    "availability_status": "Available for Work"
+  }
 }
