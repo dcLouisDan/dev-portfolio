@@ -17,7 +17,7 @@ Motivated and results-oriented Junior Web Developer and Software Engineer with a
 *   **Styling & UI:** Tailwind CSS, Bootstrap
 *   **Databases:** MySQL, PostgreSQL
 *   **Design Tools:** Figma, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro
-*   **Other:** Git, RESTful APIs, Networking (FTTH Support)
+*   **Other:** Git, RESTful APIs, Linux (Ubuntu), Server Management (VMware ESXi), SSH, Networking (FTTH Support)
 
 ---
 
@@ -29,7 +29,8 @@ Motivated and results-oriented Junior Web Developer and Software Engineer with a
 *   operated as a **Solo Developer**, taking full ownership of the lifecycle for multiple web applications, from requirement gathering to deployment.
 *   Architected and developed responsive, high-performance web solutions using **PHP (Laravel)** and **React.js**.
 *   Implemented modern User Interfaces (UI) using **Tailwind CSS**, ensuring cross-device compatibility and a seamless user experience.
-*   Managed and maintained company IT infrastructure, ensuring uptime and reliability.
+*   Managed and maintained company IT infrastructure, deploying internal web apps on local servers using **VMware ESXi**.
+*   Configured **Ubuntu** VMs for Laravel production environments, handling dependency installation and static IP setup via terminal/SSH.
 *   Provided technical support for Fiber-to-the-Home (FTTH) customers, troubleshooting network issues and optimizing service.
 
 **Key Projects:**

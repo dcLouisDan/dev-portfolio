@@ -11,7 +11,7 @@ function Portfolio() {
 
   return (
     <div className="min-h-screen bg-paper p-4 md:p-8 font-sans text-ink">
-      <main className="max-w-[1200px] mx-auto bg-white shadow-2xl md:shadow-none min-h-screen md:min-h-0 border-x border-rule/50 md:border-none px-4 md:px-0">
+      <main className="max-w-[1400px] mx-auto bg-white shadow-2xl md:shadow-none min-h-screen md:min-h-0 border-x border-rule/50 md:border-none px-4 md:px-0">
 
         {/* MASTHEAD */}
         <header className="mb-8 pt-8">
@@ -46,7 +46,7 @@ function Portfolio() {
               ))}
             </div>
 
-            <div className="mt-12 p-4 border border-black bg-neutral-100/50 text-center">
+            <div className="mt-12 p-4 border border-black bg-neutral-100/50 text-center sticky top-8">
               <p className="font-serif-display font-bold text-xl mb-2">Hire This Developer</p>
               <p className="text-sm font-serif-text italic mb-4">"A code craftsman waiting for the right opportunity."</p>
               <a href={`mailto:${contact.email}`} className="inline-block bg-black text-white px-6 py-2 font-bold uppercase text-sm hover:bg-neutral-800 transition-colors">
@@ -67,9 +67,7 @@ function Portfolio() {
 
               <div className="flex flex-col md:flex-row gap-6 mb-6">
                 {/* Placeholder Image */}
-                <div className="w-full md:w-1/3 h-48 bg-neutral-200 grayscale contrast-125 flex items-center justify-center border border-neutral-300">
-                  <span className="font-serif-text italic text-neutral-500 text-sm p-4 text-center">Fig 1. Developer at work (Symbolic)</span>
-                </div>
+                <img src="/dev_1.JPEG" alt="Developer at work (Symbolic)" className="w-full md:w-1/3 h-52 bg-neutral-200 grayscale contrast-125 flex items-center justify-center border border-neutral-300" />
                 <div className="w-full md:w-2/3">
                   <p className="font-serif-text text-lg leading-relaxed drop-cap mb-4 text-justify">
                     {lead_story.intro[0]}
@@ -93,7 +91,7 @@ function Portfolio() {
                 {projects.map((project) => (
                   <article key={project.id} className="pb-6 border-b border-rule last:border-0">
                     <div className="flex flex-col md:flex-row gap-4">
-                      <div className="md:w-3/4">
+                      <div className={project.img && "md:w-3/4"}>
                         <div className="flex items-baseline gap-2 mb-1">
                           <span className="text-[10px] font-bold uppercase bg-black text-white px-1">{project.category}</span>
                         </div>
@@ -122,11 +120,13 @@ function Portfolio() {
                         )}
 
                       </div>
-                      <div className="md:w-1/4">
-                        <div className="aspect-square bg-neutral-100 border border-neutral-200 flex items-center justify-center">
-                          <span className="text-xs font-mono text-neutral-300">IMG: {project.id}</span>
-                        </div>
-                      </div>
+                      {
+                        project.img && (
+                          <div className="md:w-1/4">
+                            <img src={project.img} alt={project.title} className="aspect-square object-cover bg-neutral-100 border border-neutral-200 flex items-center justify-center" />
+                          </div>
+                        )
+                      }
                     </div>
                   </article>
                 ))}

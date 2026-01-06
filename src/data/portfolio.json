@@ -35,9 +35,25 @@
             "MySQL & PostgreSQL",
             "Figma & Adobe Suite",
             "RESTful APIs"
+        ],
+        "Infrastructure": [
+            "Linux (Ubuntu CLI)",
+            "VMware ESXi",
+            "SSH & Networking"
         ]
     },
     "projects": [
+        {
+            "id": "crm",
+            "title": "Customer Relationship Manager",
+            "category": "Enterprise Software",
+            "description": "Comprehensive CRM system developed to streamline client data management, interaction tracking, and service history for better customer retention.",
+            "tech": [
+                "PHP",
+                "Laravel",
+                "Tailwind CSS"
+            ]
+        },
         {
             "id": "osp",
             "title": "Outside Plant Management System",
@@ -54,6 +70,7 @@
             "id": "pm-system",
             "title": "Project Management Prototype",
             "category": "Productivity Tool",
+            "img": "/pms_2.jpeg",
             "description": "A decoupled project management system with a focus on scalability. Features separate codebases for the frontend and backend to separate concerns and improve maintainability.",
             "tech": [
                 "Laravel API",
@@ -64,19 +81,20 @@
             "github_links": [
                 {
                     "label": "Frontend Repo",
-                    "url": "https://github.com/unixdc/pm-frontend-placeholder"
+                    "url": "https://github.com/dcLouisDan/project-management-system-fe.git"
                 },
                 {
                     "label": "Backend Repo",
-                    "url": "https://github.com/unixdc/pm-backend-placeholder"
+                    "url": "https://github.com/dcLouisDan/project-management-system-api.git"
                 }
             ],
-            "demo_link": "https://pm-prototype-demo.placeholder.com"
+            "demo_link": "https://pms.danlouis.dev"
         },
         {
             "id": "tetris",
             "title": "Classic Tetris Clone",
             "category": "Game Development",
+            "img": "/tetris_1.jpeg",
             "description": "A faithful recreation of the classic puzzle game. Implements complex game logic, collision detection, and score tracking without external game engines.",
             "tech": [
                 "Vanilla JavaScript",
@@ -86,26 +104,16 @@
             "github_links": [
                 {
                     "label": "Source Code",
-                    "url": "https://github.com/unixdc/tetris-clone-placeholder"
+                    "url": "https://github.com/dcLouisDan/tetris-by-me.git"
                 }
-            ]
-        },
-        {
-            "id": "crm",
-            "title": "Customer Relationship Manager",
-            "category": "Enterprise Software",
-            "description": "Comprehensive CRM system developed to streamline client data management, interaction tracking, and service history for better customer retention.",
-            "tech": [
-                "PHP",
-                "Laravel",
-                "Tailwind CSS"
-            ]
+            ],
+            "demo_link": "/tetris"
         }
     ],
     "contact": {
-        "email": "contact@danlouis.dev",
-        "github": "github.com/unixdc",
-        "linkedin": "linkedin.com/in/danlouis",
+        "email": "louisdc002@gmail.com",
+        "github": "github.com/dcLouisDan",
+        "linkedin": "linkedin.com/in/dan-louis-dc",
         "availability_status": "Available for Work"
     }
 }

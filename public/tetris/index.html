@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>TETRIS BY ME</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 0.125em;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #2f2f2f;
+        color: white;
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .start-menu {
+        text-align: center;
+      }
+
+      .instructions-list {
+        padding: 0;
+        text-align: left;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .paused {
+        opacity: 0.5;
+      }
+
+      .paused-text {
+        text-align: right;
+      }
+
+      .game-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0.25em;
+      }
+
+      .previewContainer {
+        border: 2px solid white;
+        background-color: #1f1f1f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3em;
+        width: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TETRIS BY ME</h1>
+    <div class="start-menu" id="startMenu">
+      <button id="startBtn" class="btn">START</button>
+      <p>Controls:</p>
+      <ul class="instructions-list">
+        <li>Left Arrow: Move Left</li>
+        <li>Right Arrow: Move Right</li>
+        <li>Down Arrow: Soft Drop</li>
+        <li>Up Arrow / Z: Rotate</li>
+        <li>X: Hold</li>
+        <li>Spacebar: Hard Drop</li>
+        <li>P: Pause/Resume</li>
+      </ul>
+    </div>
+    <div id="gameOverMenu" style="text-align: center">
+      <h2>Game Over!</h2>
+      <p>Your score: <span id="finalScore">0</span></p>
+      <button class="btn" id="restartBtn">Restart</button>
+    </div>
+    <div class="hidden" id="gameContainer">
+      <div class="game-header">
+        <h2>Score: <span id="score">0</span></h2>
+        <h2 class="paused-text hidden">PAUSED</h2>
+      </div>
+      <div
+        style="display: flex; gap: 20px; align-items: flex-start"
+        id="canvasContainer"
+      >
+        <div>
+          <span style="margin-bottom: 5px; display: block">Hold [X]:</span>
+          <div id="holdShapeContainer" class="previewContainer">
+            <canvas id="holdShape" width="80" height="80"></canvas>
+          </div>
+        </div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div>
+          <span style="margin-bottom: 5px; display: block">Next:</span>
+          <div id="nextShapeContainer" class="previewContainer">
+            <canvas id="nextShape" width="80" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="tetris.js"></script>
+  </body>
+</html>
